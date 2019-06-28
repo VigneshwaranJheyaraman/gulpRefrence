@@ -1,0 +1,16 @@
+.spDiv
+{
+  width: 100%;
+  height:50%;
+  background-color: brown;
+}
+.spDiv div
+{
+  width:80%;
+  height: 40%;
+  background-color: gray  ;
+}
+#root div button
+{
+  background-color: red;
+}

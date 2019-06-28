@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WebSocketFunction from './components/WebSocket';
+import OverrideEvents from './components/OverrideEvents';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const stocks_details = ['Infosys', 'Reliance', 'Kotak', 'SBI'];
+  return (<div>
+    {
+      <WebSocketFunction stocksDetails={stocks_details}/>
+    }
+    {
+      <OverrideEvents />
+    }
+  </div>);
 }
 
 export default App;
