@@ -4,6 +4,7 @@ import OverrideEvents from './components/OverrideEvents';
 
 function App() {
   const stocks_details = ['Infosys', 'Reliance', 'Kotak', 'SBI'];
+  console.log("testing watch")
   return (<div>
     {
       <WebSocketFunction stocksDetails={stocks_details}/>

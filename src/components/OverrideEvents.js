@@ -10,7 +10,7 @@ export default function OverrideEvents(props)
         }
         else
         {
-            document.getElementById("spb").style.backgroundColor="red";
+            document.getElementById("spb").style.backgroundColor="purple";
         }
     },[sProp]);
     function buttonToogle(e)

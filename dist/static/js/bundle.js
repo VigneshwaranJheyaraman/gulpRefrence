@@ -25141,6 +25141,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function App() {
   var stocks_details = ['Infosys', 'Reliance', 'Kotak', 'SBI'];
+  console.log("testing watch");
   return _react.default.createElement("div", null, _react.default.createElement(_WebSocket.default, {
     stocksDetails: stocks_details
   }), _react.default.createElement(_OverrideEvents.default, null));
@@ -25181,7 +25182,7 @@ function OverrideEvents(props) {
     if (sProp) {
       document.getElementById("spb").style.backgroundColor = "green";
     } else {
-      document.getElementById("spb").style.backgroundColor = "red";
+      document.getElementById("spb").style.backgroundColor = "purple";
     }
   }, [sProp]);
 
